@@ -1,4 +1,4 @@
-discord.py-self
+guilded.py-self
 ================
 
 .. image:: https://img.shields.io/endpoint?url=https%3A%2F%2Frunkit.io%2Fdamiankrawczyk%2Ftelegram-badge%2Fbranches%2Fmaster%3Furl%3Dhttps%3A%2F%2Ft.me%2Fdpy_self
@@ -22,12 +22,7 @@ A modern, easy to use, feature-rich, and async ready API wrapper for Discord's u
 Fork Changes
 ------------
 
-These changes have become too numerous to mention, so check out our `docs <https://discordpy-self.readthedocs.io/en/latest/index.html>`_.
-
-**Credits:**
-
-- `Rapptz <https://github.com/Rapptz>`_ for the original library this fork is based on. Without it, the project would not exist.
-- `arandomnewaccount <https://www.reddit.com/user/obviouslymymain123/>`_ for help when the project was first started.
+GUILDED
 
 Key Features
 -------------
@@ -95,19 +90,14 @@ Please note that on Linux installing voice you must install the following packag
 * libffi-dev (or ``libffi-devel`` on some systems)
 * python-dev (e.g. ``python3.6-dev`` for Python 3.6)
 
-Using with Upstream
-~~~~~~~~~~~~~~~~~~~~
-
-If you would like to use the library alongside upstream ``discord.py``, you can install ``selfcord.py`` instead of ``discord.py-self``. Check out the `renamed branch <https://github.com/dolfies/discord.py-self/blob/renamed/README.rst>`_ for more information.
-
 Quick Example
 --------------
 
 .. code:: py
 
-    import discord
+    import guilded
 
-    class MyClient(discord.Client):
+    class MyClient(guilded.Client):
         async def on_ready(self):
             print('Logged on as', self.user)
 
@@ -127,8 +117,8 @@ Bot Example
 
 .. code:: py
 
-    import discord
-    from discord.ext import commands
+    import guilded
+    from guilded.ext import commands
 
     bot = commands.Bot(command_prefix='>', self_bot=True)
 
